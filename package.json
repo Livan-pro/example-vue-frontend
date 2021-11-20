@@ -1,0 +1,54 @@
+{
+  "name": "example-vue-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Livan-pro",
+  "scripts": {
+    "serve": "gulp --public && webpack serve --mode=development",
+    "build": "webpack --mode=production && gulp --production",
+    "dev": "webpack --mode=development && gulp",
+    "test:e2e": "start-server-and-test serve http://localhost:8080 'cypress run'",
+    "lint:js": "eslint --ext .js,.vue src/",
+    "lint:css": "stylelint src/styles/**/*.scss",
+    "lint": "yarn run lint:js && yarn run lint:css"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.0.0",
+    "core-js": "^3.19.1",
+    "cypress": "^9.0.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-vue": "^8.1.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^6.0.1",
+    "start-server-and-test": "^1.14.0",
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard-scss": "^2.0.1",
+    "stylelint-scss": "^4.0.0",
+    "vue-loader": "^15.9.8",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0",
+    "webpack-merge": "^5.8.0",
+    "yargs": "^17.2.1"
+  },
+  "license": "MIT",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

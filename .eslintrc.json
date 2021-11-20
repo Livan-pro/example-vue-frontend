@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/recommended",
+    "plugin:import/warnings"
+  ],
+  "plugins": ["import"],
+  "rules": {
+    "import/order": ["warn", {}],
+    "max-len": ["warn", { "code": 120 }],
+    "vue/singleline-html-element-content-newline": 0,
+    "vue/max-attributes-per-line": 0,
+    "vue/html-self-closing": ["warn", { "html": { "void": "always" } }]
+  }
+}
